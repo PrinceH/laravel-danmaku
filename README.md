@@ -1,4 +1,4 @@
-#Laravel Danmaku
+# Laravel Danmaku
 
 [![GitHub license](https://img.shields.io/github/license/MoePlayer/laravel-danmaku.svg)](https://github.com/MoePlayer/laravel-danmaku/blob/master/LICENSE)
 
@@ -17,11 +17,11 @@ Copy the package migration to your local migration with the publish command:
 php artisan vendor:publish --tag danmaku
 php artisan migrate 
 ```
-Add danmakuv2 to the csrf whitelist
+Add danmakuv3 to the csrf whitelist
 ```php
 // app\Http\Middleware\VerifyCsrfToken.php
 protected $except = [
-     'danmakuv2'
+     'danmakuv3'
 ];
 ```
 
