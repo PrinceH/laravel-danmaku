@@ -1,5 +1,5 @@
 {
-  "name": "moeplayer/laravel-danmaku",
+  "name": "princeh/laravel-danmaku",
   "description": "DPlayer Danmaku For Laravel 5",
   "type": "library",
   "keywords": [
@@ -7,12 +7,12 @@
     "laravel-danmaku",
     "dplayer"
   ],
-  "homepage": "https://github.com/MoePlayer/laravel-danmaku",
+  "homepage": "https://github.com/PrinceH/laravel-danmaku",
   "license": "MIT",
   "authors": [
     {
-      "name": "kslr",
-      "email": "kslrwang@gmail.com"
+      "name": "PrinceH",
+      "email": "634473223@qq.com"
     }
   ],
   "require": {

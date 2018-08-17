@@ -27,8 +27,8 @@ class DanmakuController extends Controller
         }
         return [
             'code' => 0,
-            'version' => 2,
-            'danmaku' => $result,
+            'version' => 3,
+            'data' => $result,
         ];
     }
 
@@ -39,7 +39,7 @@ class DanmakuController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'player' => 'required|max:255',
+            'id' => 'required|max:255',
             'author' => 'string',
             'time' => 'required',
             'text' => 'required|max:30',
@@ -52,7 +52,7 @@ class DanmakuController extends Controller
         } else {
             $danmaku = new Danmaku;
             $danmaku->user_id = Auth::user()->id;
-            $danmaku->video_id = $request->json('player');
+            $danmaku->video_id = $request->json('id');
             $danmaku->author = $request->json('author');
             $danmaku->time = $request->json('time');
             $danmaku->text = $request->json('text');
