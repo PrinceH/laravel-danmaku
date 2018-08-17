@@ -38,7 +38,7 @@ const dp = new DPlayer({
     },
     danmaku: {
         id: 'demo',
-        api: 'http://domain/danmakuv2',
+        api: 'http://domain/danmaku',
         user: 'dog'
     }
 });
